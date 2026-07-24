@@ -34,6 +34,11 @@
         android:extractNativeLibs="true"
         android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.MyApplication">
+        <service
+            android:name=".service.DownloadService"
+            android:foregroundServiceType="dataSync"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
